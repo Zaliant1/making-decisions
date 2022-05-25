@@ -182,15 +182,23 @@ if (changeMyMind !== true) {
 ////////// PROBLEM 11 //////////
 
 let z = 5;
-// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
-
+// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1.
+// Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 //CODE HERE
+let j = 4;
 
-console.log("hi", z);
-while (z > 5) {
-  for (let i = z - 1; i >= 0; i--) {
-    console.log(i);
+console.log(z);
+while (z > 0 && j > 0) {
+  console.log(j);
+  j--;
+  if (j === 0) {
+    j = z -= 1;
   }
-  console.log(z);
-  z--;
 }
+
+// console.log("starting second set");
+// for (let i = 5; i > 0; i--) {
+//   for (let j = i; j > 0; j--) {
+//     console.log(j);
+//   }
+// }
